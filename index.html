@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jerry Cao</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+        
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+        }
+
+        button {
+            padding: 0;
+            text-align: center;
+            background-color: #00000000;
+            border: none;
+            font-family: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button h2 {
+            font-size: 24px;
+        }
+
+        button p {
+            font-size: 16px;
+        }
+
+        ::selection {
+            background-color: #123456aa;
+            color: #fff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10%;
+        }
+
+        .right-column {
+            font-family: 'Pinyon Script', cursive;
+            text-align: center;
+            float: right;
+            width: calc(100vw - 150vh);
+            position: absolute;
+            top: 0;
+            left: 150vh;
+            margin-top: 30vh;
+        }
+
+        .right-column img {
+            width: 25%;
+        }
+
+        .right-column h1 {
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: .2em;
+            font-size: 1.5em;
+            color: #123456;
+        }
+
+        .main {
+            width: 100vh;
+            margin: 0;
+            position: absolute;
+            display: flex;
+        }
+
+        .main img {
+            width: 50vh;
+            position: absolute;
+        }
+
+        .element,
+        .literature {
+            transition-duration: 500ms;
+            width: 50vh;
+            height: 50vh;
+            position: absolute;
+            color: #00000000;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .literature {
+            background-color: #123456;
+            color: #ffffff;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .poem hr {
+            border: 1px sloid #123456;
+            width: 99%;
+            margin: 0;
+        }
+
+        .poem h2 {
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .poem p {
+            margin: 0;
+        }
+
+        .poem {
+            width: 37.5vh;
+            height: 37.5vh;
+            padding: 6.25vh;
+            overflow: auto;
+        }
+
+        .left {
+            text-align: left !important;
+        }
+
+        .right {
+            text-align: right !important;
+        }
+
+        .wide-padding {
+            width: 25vh;
+            height: 25vh;
+            padding: 12.5vh;
+            overflow: auto;
+        }
+
+        .element:hover,
+        .literature:hover {
+            background-color: #123456aa;
+            color: #fff;
+        }
+
+        .a {
+            top: 0;
+            left: 0;
+        }
+
+        .b {
+            top: 0;
+            left: 50vh;
+        }
+
+        .c {
+            top: 0;
+            left: 100vh;
+        }
+
+        .d {
+            top: 50vh;
+            left: 0;
+        }
+
+        .e {
+            top: 50vh;
+            left: 50vh;
+            color: #123456;
+        }
+
+        .f {
+            top: 50vh;
+            left: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <img class="a" srcset="seaport.jpg">
+        <div class="element a">
+            <h2>Seaport</h2>
+            <p>Samsung SM-S908U1</p>
+            <p>ISO 40 | 230mm | 0.0ev | F4.9 | 1/150 s</p>
+        </div>
+        <div class="literature b">
+            <div class="poem">
+                <h2>Peace and Rage from Nothing</h2>
+                <hr>
+                <p><i>I can change the world</i></p>
+                <p class="left">That was a child’s dream,</p>
+                <p class="left">What he believed.</p>
+                <p class="left">“Go do it, go,”</p>
+                <p class="left">They spoke, to him</p>
+                <p class="left">And to the wind.</p>
+                <p class="left">They know it will be</p>
+                <p class="left"><i>An uphill path</i></p>
+                <p class="left">But they still</p>
+                <p class="left"><i>Said it.</i></p>
+                <hr>
+                <p class="right">The wood burned,</p>
+                <p class="right">In fire</p>
+                <p class="right">To ashes</p>
+                <p><i>I can see the rising ember.</i></p>
+                <p class="left">Beside the road, there</p>
+                <p class="left">Walked the man, lonely.</p>
+                <p class="right">Continue burning.</p>
+                <p class="left">A car approached,</p>
+                <p class="left">Felt the cool wind through</p>
+                <p class="left">His thin young body.</p>
+                <p><i>Where does the road lead?</i></p>
+                <p class="left">There stopped a truck.</p>
+                <p class="left">“Why would you walk?”</p>
+                <p class="left">Shouted the man</p>
+                <p class="left">In the windows to the wind.</p>
+                <p><i>Silence</i></p>
+                <p class="right">To the wind.</p>
+                <p>Replied the alone</p>
+                <p>“Would you like to answer,</p>
+                <p>Why do you have to drive?”</p>
+                <p class="left">The driver smiled,</p>
+                <p class="left">“Because they say so…”</p>
+                <p class="left">And he drove faster.</p>
+                <p><i>I can feel the air</i></p>
+                <p class="right">Burning,</p>
+                <p class="right">Freezing,</p>
+                <p class="right">Twisting,</p>
+                <p><i>I walk on ice.</i></p>
+                <p><i>Fragile ice,</i></p>
+                <p><i>Translucent ice.</i></p>
+                <p class="left">There he arrived at</p>
+                <p class="left">A river he did not know.</p>
+                <p class="left"><i>How cold is the river?</i></p>
+                <p class="left">Gripping him, he saw</p>
+                <p class="left">The vibrant color of change.</p>
+                <p><i>Is it silver I see, </i></p>
+                <p><i>Or trembling jade?</i></p>
+                <p class="right">Splash!</p>
+                <hr>
+                <p class="left">In the city, that man</p>
+                <p class="left">Walked down the</p>
+                <p class="left">Avenue in the dark.</p>
+                <p class="right">It rained.</p>
+                <p class="right">Heavens dropped,</p>
+                <p class="right">Through the moist</p>
+                <p class="right">Cool air, and</p>
+                <p class="right">Fell on top of</p>
+                <p class="right">The man’s face.</p>
+                <p class="left">Umbrella people passed,</p>
+                <p class="left"><i>“Buy an umbrella.”</i></p>
+                <p class="right">The fire burned,</p>
+                <p class="right">To carve the rain.</p>
+                <p class="left">He did not.</p>
+                <p><i>I can be myself</i></p>
+                <hr>
+                <p class="left">He went on to work,</p>
+                <p class="left">And thought about his</p>
+                <p class="left">Childhood dream,</p>
+                <p class="left">The world. The world</p>
+                <p class="left">Treated him</p>
+                <p class="right">As burning.</p>
+                <p><i>I’ve done nothing great</i></p>
+                <p><i>I’ve done nothing bad</i></p>
+                <p class="left">They talked about</p>
+                <p class="left">The things that</p>
+                <p class="left">Never occurred.</p>
+                <p><i>What have I done?</i></p>
+                <p class="left">And he still depicted</p>
+                <p class="left">A perfect dream.</p>
+                <p class="right">The rain came again.</p>
+            </div>
+        </div>
+        <img class="c" srcset="stairway-to-heaven.jpg">
+        <div class="element c">
+            <h2>Stairway to Heaven</h2>
+            <p>Samsung SM-S908U1</p>
+            <p>ISO 64 | 230mm | 0.0ev | F4.9 | 1/60 s</p>
+        </div>
+        <div class="literature d">
+            <div class="poem wide-padding">
+                <h2 class="left">Spring</h2>
+                <br>
+                <br>
+                <br>
+                <p class="left">a melody of a songbird,</p>
+                <p class="left">an exploration…</p>
+                <p class="left">of a violet iris.</p>
+            </div>
+        </div>
+        <button class="element e">
+            <h2>Film Photography</h2>
+            <p>Kodak Retina Reflex IV; Vivitar V3800N</p>
+            <p>ISO 100; 400 | 50; 28-70mm</p>
+        </button>
+        <div class="literature f">
+            <div class="poem">
+                <h2 class="left">See It in the Fall</h2>
+                <br>
+                <p class="left">The moist air grew colder.</p>
+                <br>
+                <p class="left">People wondered about the time of fall,</p>
+                <p class="left">Waiting for something in return.</p>
+                <p class="left">And there was someone who complained:</p>
+                <p class="left">“I don’t need my heavy coat.”</p>
+                <p class="left">But as days flowed on,</p>
+                <p class="left">He dressed up just with that.</p>
+                <p class="left">The leaves took a glance at him</p>
+                <p class="left">As they all fell to the ground.</p>
+                <br>
+                <p class="left">Gently whirling, drifting toward the earth.</p>
+                <p class="left">The hues of autumn danced within</p>
+                <p class="left">This waltz of nature,</p>
+                <p class="left">Glistening by the beam of the sun.</p>
+                <br>
+                <p class="left">The man with the coat</p>
+                <p class="left">Just realized what he needs:</p>
+                <p class="left">A return for his own efforts,</p>
+                <p class="left">And a turn that makes him alive.</p>
+                <p class="left">There he saw the changing color,</p>
+                <p class="left">And the mystery of flowing leaves,</p>
+                <p class="left">Thinking:</p>
+                <p class="left">Should I be like the fall?</p>
+                <br>
+                <p class="left">The flow of light went through the bushes,</p>
+                <p class="left">Lightened them up, but they varied</p>
+                <p class="left">from the sun to the color of the ground.</p>
+                <p class="left">The kinds of ever-green, calling all around.</p>
+                <br>
+                <p class="left">Fall gently replies,</p>
+                <p class="left">“Time will give you the answer.”</p>
+                <p class="left">And the man just sat there in deep ponder,</p>
+                <p class="left">With his green vintage notebook, he noted to himself:</p>
+                <p class="left">“I get what I should have,</p>
+                <p class="left">And I should now change,</p>
+                <p class="left">And this is how fall works,</p>
+                <p class="left">And this is how I should live.”</p>
+                <br>
+                <p class="left">Vibrating water</p>
+                <p class="left">Reflected the light and the trees,</p>
+                <p class="left">Illuminating the scattered harmony:</p>
+                <p class="left">It moved and flowed like the fall.</p>
+                <br>
+                <p class="left">The palette shined with the changing color,</p>
+                <p class="left">The brightness, and the contrast,</p>
+                <p class="left">Painting on the canvas:</p>
+                <p class="left">The glossy harmony he saw.</p>
+                <p class="left">He wondered can he live like this,</p>
+                <p class="left">“I hope the answer is ‘yes’”</p>
+                <br>
+                <p class="left">The leaves were embellished</p>
+                <p class="left">with vague crimson,</p>
+                <p class="left">Showing its emerald,</p>
+                <p class="left">And shaded with the crispy browns.</p>
+                <br>
+                <p class="left">There he stood below the branches</p>
+                <p class="left">And did his work beside the pond.</p>
+                <p class="left">As the leaves changed,</p>
+                <p class="left">His pen upon his book.</p>
+                <p class="left">He finished the first letter to himself,</p>
+                <p class="left">And he stood up and he sees.</p>
+            </div>
+        </div>
+    </div>
+    <div class="right-column">
+        <img srcset="avatar.jpg">
+        <h1>Portfolio</h1>
+        <h1>Jerry Jiahao Cao</h1>
+    </div>
+</body>
+
+</html>
