@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Jerry Cao</title>
+    <script>
+        if (screen.availWidth < 1000) {
+            document.open()
+            document.write("<div class='top-c'><p>Photography and Poetry</p><p>Jiahao 'Jerry' Cao</p></div>")
+            document.close()
+        };
+    </script>
     <style id="sty">
         @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');
@@ -54,16 +61,13 @@
             margin-top: 30vh;
         }
 
-        .right-column img {
-            width: 25%;
-        }
-
         .right-column h1 {
             font-weight: 400;
             margin: 0;
             letter-spacing: .2em;
             font-size: 1.5em;
             color: #123456;
+            display: initial;
         }
 
         .main {
@@ -206,14 +210,7 @@
             }
 
             .right-column {
-                position: sticky;
-                display: flex;
-                float: inline-start;
-                flex-direction: column;
-                width: 95%;
-                height: 10%;
-                margin: 2.5%; 
-                font-size: 0.75em;
+                display: none;
             }
 
             .main {
@@ -230,8 +227,8 @@
             }
 
             .element {
-                width: 80%; 
-                height: 100%; 
+                width: 80%;
+                height: 100%;
                 position: initial;
                 display: flex;
                 justify-content: center;
@@ -242,13 +239,14 @@
                 padding: 5% 10%;
             }
 
-            .element h2, p {
+            .element h2,
+            p {
                 margin: 0.2em;
             }
 
             .literature {
-                width: 100%; 
-                height: 100%; 
+                width: 100%;
+                height: 100%;
                 background-color: #123456;
                 color: #ffffff;
                 font-family: 'Playfair Display', serif;
@@ -291,13 +289,21 @@
                 text-align: right !important;
             }
 
-            .e{
+            .e {
                 background-color: #123456;
-                color: #ffffff; 
+                color: #ffffff;
                 width: 100%;
                 border: 10vh solid #ffffff;
                 justify-content: left;
                 padding: 5%;
+            }
+
+            .top-c {
+                font-family: 'Pinyon Script', cursive;
+                text-align: center;
+                color: #123456; 
+                font-size: 1.5em;
+                padding: 2%;
             }
         }
     </style>
