@@ -206,7 +206,14 @@
             }
 
             .right-column {
-                display: none;
+                position: sticky;
+                display: flex;
+                float: inline-start;
+                flex-direction: column;
+                width: 95%;
+                height: 10%;
+                margin: 2.5%; 
+                font-size: 0.75em;
             }
 
             .main {
@@ -223,15 +230,20 @@
             }
 
             .element {
-                width: 100%; 
+                width: 80%; 
                 height: 100%; 
                 position: initial;
                 display: flex;
                 justify-content: center;
-                text-align: center;
                 flex-direction: column;
-                background-color: #123456aa;
-                color: #ffffff;
+                color: #123456;
+                font-size: 0.5em;
+                text-align: left;
+                padding: 5% 10%;
+            }
+
+            .element h2, p {
+                margin: 0.2em;
             }
 
             .literature {
@@ -255,11 +267,13 @@
 
             .poem h2 {
                 font-weight: 700;
+                font-size: 1em;
                 margin: 0;
             }
 
             .poem p {
                 margin: 0;
+                font-size: 0.75em;
             }
 
             .poem {
@@ -278,8 +292,12 @@
             }
 
             .e{
-                background-color: #123456aa;
+                background-color: #123456;
                 color: #ffffff; 
+                width: 100%;
+                border: 10vh solid #ffffff;
+                justify-content: left;
+                padding: 5%;
             }
         }
     </style>
@@ -472,9 +490,8 @@
         </div>
     </div>
     <div class="right-column">
-        <img srcset="avatar.jpg">
-        <h1>Portfolio</h1>
-        <h1>Jerry Jiahao Cao</h1>
+        <h1>Photography and Poetry</h1>
+        <h1>Jiahao "Jerry" Cao</h1>
     </div>
 </body>
 
